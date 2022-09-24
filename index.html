@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task | Convert Currency</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="main__container">
+            <div class="main_title">Currency converter</div>
+            <div class="main_box">
+                <div class="main_amount">
+                    <p class="main_info">Amount to convert:</p>
+                    <input type="number" class="main_input" id="input" placeholder="Type amount">
+                </div>
+                <div class="main_amount_from">
+                    <div class="main_info">From:</div>
+                    <select id="selectFrom" class="main_select">
+                        <option>EUR</option>
+                        <option selected>USD</option>
+                        <option>UAH</option>
+                    </select>
+                </div>
+                <div class="main_amount_to">
+                    <div class="main_info">To:</div>
+                    <select id="selectTo" class="main_select">
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>UAH</option>
+                    </select>
+                </div>
+                <button class="main_submit" id="submit">Submit</button>
+                <div class="main_info" id="result">Result:</div>
+            </div>
+        </div>
+        <div class="main_rates">Rates: https://www.exchangerate-api.com, 24.09.2022</div>
+    </main>
+</body>
+</html>
+<script src="./main.js"></script>
