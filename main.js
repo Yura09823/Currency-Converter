@@ -18,27 +18,27 @@ $("#submit").click(()=>{
     console.log(data.conversion_rates );
     console.log(parseInt(document.getElementById('input').value));
     if(selectFrom == 'USD' && selectTo == 'EUR'){
-        result = parseInt(data.conversion_rates.EUR * document.getElementById('input').value);
+        result = data.conversion_rates.EUR * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
     else if(selectFrom == 'EUR' && selectTo == 'USD'){
-        result = parseInt(data.conversion_rates.USD * document.getElementById('input').value);
+        result = data.conversion_rates.USD * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
     else if(selectFrom == 'UAH' && selectTo == 'USD'){
-        result = parseInt(data.conversion_rates.USD * document.getElementById('input').value);
+        result = data.conversion_rates.USD * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
     else if(selectFrom == 'USD' && selectTo == 'UAH'){
-        result = parseInt(data.conversion_rates.UAH * document.getElementById('input').value);
+        result = data.conversion_rates.UAH * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
     else if(selectFrom == 'UAH' && selectTo == 'EUR'){
-        result = parseInt(data.conversion_rates.EUR * document.getElementById('input').value);
+        result = data.conversion_rates.EUR * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
     else if(selectFrom == 'EUR' && selectTo == 'UAH'){
-        result = parseInt(data.conversion_rates.UAH * document.getElementById('input').value);
+        result = data.conversion_rates.UAH * document.getElementById('input').value;
         document.getElementById("result").innerText = 'Result: ' + result;
     }
 
